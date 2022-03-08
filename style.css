@@ -15,20 +15,27 @@ h3{
 }
 
 #pfp {
-    height: 100%;
+    height: 60%;
     align-self: center;
     border-radius: 25px;
 }
 
-#boy {
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
+.socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .social_icon {
-    height: 1.5em;
+    height: 2em;
+    width: 2em;
+    margin: 0.3em;
+}
 
+#resume {
+    font-size: 1.25em;
+    align-self: center;
+    margin-top: 0.25em;
 }
 
 body {
@@ -36,35 +43,55 @@ body {
 }
 
 a {
-    color: brown;
+    color: burlywood;
     text-decoration: none;
+}
+
+a:hover {
+    color: brown;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 18vw 20vw;
+    grid-template-rows: 48vw;
     grid-gap: 0.5em;
     margin: 0.2em 3em 0em 3em;
     padding: 0.3em;
-    justify-items: center;
+    justify-items: right;
+}
+
+.right {
+    text-align: right;
+    margin-right: 5em;
+}
+
+.left {
+    margin-left: 5em;
 }
 
 .content {
     padding: 0.8em 0.5em;
     font-size: 120%;
-    justify-content: center;
 }
 
 @media only screen and (max-width: 1200px) {
-    .content {
-        font-size: 80%;
+    .left {
+        margin-left: 3em;
+    }
+
+    .right {
+        margin-right: 3em;
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .content {
-        font-size: 50%;
+@media only screen and (max-width: 800px) {
+    .left {
+        margin-left: 1em;
+    }
+
+    .right {
+        margin-right: 1em;
     }
 }
 
@@ -73,11 +100,6 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     line-height: 1.2em;
-}
-
-h2 {
-    justify-content: flex-start;
-    display: flex;
 }
 
 li {
@@ -91,4 +113,9 @@ li {
     font-size: 80%;
     display: flex;
     float: right;
+}
+
+h2 {
+    font-size: 160%;
+    color: brown;
 }
