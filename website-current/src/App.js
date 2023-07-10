@@ -1,13 +1,21 @@
-import "./App.css";
+import { React } from "react";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 import MainPage from "./pages/MainPage/MainPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
-      <MainPage />
-      <AboutPage />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<MainPage />} />
+
+          <Route exact path="/about" element={<AboutPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
