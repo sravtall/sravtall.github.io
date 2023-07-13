@@ -4,7 +4,9 @@ const ProjectPanel = () => {
   return (
     <div>
       <h3>Project Panel</h3>
-      Info about projects (could use props here)
+      <h4>Project Name</h4>
+      <h6>Link if applicable</h6>
+      <p>Description</p>
     </div>
   );
 };

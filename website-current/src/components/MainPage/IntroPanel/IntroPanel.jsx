@@ -1,5 +1,6 @@
 import { React } from "react";
 
+import { MainPageIntroduction } from "./IntroPanelUtils.jsx";
 import picture from "../../../images/placeholder.jpeg";
 import styles from "./IntroPanel.module.css";
 
@@ -11,10 +12,7 @@ const IntroPanel = () => {
         <img className={styles.intro_picture} src={picture} alt="pic" />
       </div>
       <div>
-        <p>
-          rbfjkk bvjkdf kjbvkdj kjbvkj kjvbkjf kfjvbfjvb kjfvbkjfvb kfjvbkfjvb
-          kfjvbkfjvb kjvnfjvb
-        </p>
+        <p>{MainPageIntroduction}</p>
       </div>
     </div>
   );

@@ -9,7 +9,6 @@ const MainPage = () => {
   return (
     <div>
       <NavBar />
-      <h1>Main Page</h1>
       <IntroPanel />
       <InvolvementPanel />
       <ProjectPanel />
