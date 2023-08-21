@@ -3,12 +3,11 @@
   text-decoration: none;
 
   margin: 3px;
-  padding: 5px;
 }
 
 .navbar {
   display: flex;
   flex-direction: row-reverse;
 
-  margin: 5px;
+  width: 100%;
 }

@@ -1,12 +1,28 @@
 import { React } from "react";
 
-const InvolvementPanel = () => {
+import styles from "./InvolvementPanel.module.css";
+
+const InvolvementPanel = ({ name, pos, time, desc }) => {
   return (
     <div>
-      <h3>Involvement Panel</h3>
-      <h4>Involvement Name</h4>
-      <h6>Time commitment</h6>
-      <p>Description</p>
+      <div className={styles.container}>
+        <div className={styles.involvement_title}>
+          <h4>{name}</h4>
+        </div>
+        <div className={styles.involvement_pos}>
+          <h5>{pos}</h5>
+        </div>
+        <div className={styles.involvement_time}>
+          <h6>{time}</h6>
+        </div>
+        <div className={styles.involvement_desc}>
+          <ul>
+            {desc.map((d, index) => (
+              <li key={index}>{d}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
