@@ -17,7 +17,7 @@ const InvolvementPanel = ({ name, pos, time, desc }) => {
         </div>
         <div className={styles.involvement_desc}>
           <ul>
-            {desc.map((d, index) => (
+            {desc?.map((d, index) => (
               <li key={index}>{d}</li>
             ))}
           </ul>

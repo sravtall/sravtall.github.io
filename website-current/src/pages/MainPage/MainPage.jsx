@@ -5,7 +5,7 @@ import IntroPanel from "../../components/MainPage/IntroPanel/IntroPanel.jsx";
 import InvolvementPanel from "../../components/MainPage/InvolvementPanel/InvolvementPanel.jsx";
 import ProjectPanel from "../../components/MainPage/ProjectPanel/ProjectPanel.jsx";
 
-import { Info } from "./MainPageUtils.jsx";
+import { Involvements, Projects } from "./MainPageUtils.jsx";
 import styles from "./MainPage.module.css";
 
 const MainPage = () => {
@@ -14,7 +14,7 @@ const MainPage = () => {
       <NavBar />
       <IntroPanel />
       <div className={styles.involvements}>
-        {Info.map((involvement, index) => (
+        {Involvements.map((involvement, index) => (
           <InvolvementPanel
             key={index}
             name={involvement.name}
@@ -24,7 +24,11 @@ const MainPage = () => {
           />
         ))}
       </div>
-      <ProjectPanel />
+      <div className={styles.projects}>
+        {Projects.map((project, index) => (
+          <ProjectPanel key={index} name={project.name} desc={project.desc} />
+        ))}
+      </div>
     </div>
   );
 };

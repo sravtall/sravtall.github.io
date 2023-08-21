@@ -1,12 +1,22 @@
 import { React } from "react";
 
-const ProjectPanel = () => {
+import styles from "./ProjectPanel.module.css";
+
+const ProjectPanel = ({ name, desc }) => {
   return (
     <div>
-      <h3>Project Panel</h3>
-      <h4>Project Name</h4>
-      <h6>Link if applicable</h6>
-      <p>Description</p>
+      <div className={styles.container}>
+        <div className={styles.project_name}>
+          <h4>{name}</h4>
+        </div>
+        <div className={styles.project_desc}>
+          <ul>
+            {desc?.map((d, index) => (
+              <li key={index}>{d}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
