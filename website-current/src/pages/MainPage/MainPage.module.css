@@ -2,10 +2,22 @@
   width: 75%;
   margin: auto;
   padding: 0;
+  text-align: right;
 }
 
 .projects {
   width: 75%;
   margin: auto;
   padding: 0;
+  text-align: left;
+}
+
+section {
+  display: grid;
+  align-content: center;
+  min-height: 100vh;
+
+  color: white;
+  background-color: black;
+  /* padding-bottom: 5px; */
 }

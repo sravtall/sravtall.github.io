@@ -1,8 +1,8 @@
 .links {
   font-size: 2em;
   text-decoration: none;
-
-  margin: 3px;
+  padding: 10px;
+  color: white;
 }
 
 .navbar {
@@ -10,4 +10,11 @@
   flex-direction: row-reverse;
 
   width: 100%;
+  position: fixed;
+  margin-right: auto;
+  background-color: black;
+}
+
+.links:hover {
+  color: lightgrey;
 }

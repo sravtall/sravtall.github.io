@@ -26,6 +26,7 @@
 .welcome_text_wrapper {
   padding: 0px;
   text-align: left;
+  width: 100%;
 }
 
 .intro_picture {

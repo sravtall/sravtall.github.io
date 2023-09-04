@@ -1,23 +1,25 @@
 import { React } from "react";
+import { motion } from "framer-motion";
 
+import Reveal, { item } from "../../common/Reveal/Reveal.jsx";
 import styles from "./ProjectPanel.module.css";
 
 const ProjectPanel = ({ name, desc }) => {
   return (
-    <div>
+    <Reveal>
       <div className={styles.container}>
-        <div className={styles.project_name}>
+        <motion.div className={styles.project_name} variants={item}>
           <h4>{name}</h4>
-        </div>
-        <div className={styles.project_desc}>
+        </motion.div>
+        <motion.div className={styles.project_desc} variants={item}>
           <ul>
             {desc?.map((d, index) => (
               <li key={index}>{d}</li>
             ))}
           </ul>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </Reveal>
   );
 };
 
