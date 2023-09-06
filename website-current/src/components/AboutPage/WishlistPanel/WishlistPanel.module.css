@@ -1,0 +1,22 @@
+.container {
+  text-align: right;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.wishlist_filler {
+  font-size: 1.6em;
+  margin: auto;
+  padding: 0px 5px 5px 5px;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.wishlist_items ul {
+  direction: rtl;
+}

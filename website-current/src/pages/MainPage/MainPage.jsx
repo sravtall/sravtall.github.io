@@ -19,7 +19,7 @@ const MainPage = () => {
 
       <section>
         <div className={styles.involvements}>
-          <SubHeader name={"involvements"} />
+          <SubHeader name={"involvements."} />
           {Involvements.map((involvement, index) => (
             <InvolvementPanel
               key={index}
@@ -34,7 +34,7 @@ const MainPage = () => {
 
       <section>
         <div className={styles.projects}>
-          <SubHeader name={"projects"} />
+          <SubHeader name={"projects."} />
           {Projects.map((project, index) => (
             <ProjectPanel key={index} name={project.name} desc={project.desc} />
           ))}

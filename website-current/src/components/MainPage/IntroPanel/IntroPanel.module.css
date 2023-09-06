@@ -30,7 +30,6 @@
 }
 
 .intro_picture {
-  height: 350px;
   padding: 10px;
 }
 
@@ -46,4 +45,67 @@
 
 .introduction_wrapper {
   margin: auto;
+}
+
+.icons {
+  width: 50px;
+}
+
+.icons_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+@media screen and (min-width: 1400px) {
+  .intro_picture {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .intro_picture {
+    height: 325px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .intro_picture {
+    height: 287px;
+  }
+
+  .welcome_text_wrapper {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro_picture {
+    height: 275px;
+  }
+
+  .right_panel {
+    flex-grow: 1;
+  }
+
+  .welcome_text_wrapper {
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro_picture {
+    height: 250px;
+  }
+
+  .welcome_text_wrapper {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .intro_picture {
+    height: 225px;
+  }
 }

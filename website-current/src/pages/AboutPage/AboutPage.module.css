@@ -1,0 +1,23 @@
+section {
+  display: grid;
+  align-content: center;
+  min-height: 100vh;
+
+  color: white;
+  background-color: black;
+  /* padding-bottom: 5px; */
+}
+
+.wishlist_section {
+  width: 75%;
+  margin: auto;
+  padding: 0;
+  text-align: right;
+}
+
+.socials_section {
+  width: 75%;
+  margin: auto;
+  padding: 0;
+  text-align: left;
+}
