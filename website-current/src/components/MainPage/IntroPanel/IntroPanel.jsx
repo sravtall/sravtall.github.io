@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MainPageIntroduction } from "./IntroPanelUtils.jsx";
 import Reveal, { item } from "../../common/Reveal/Reveal.jsx";
 
-import picture from "../../../images/placeholder.jpeg";
+import picture from "../../../images/mainpage.jpg";
 import GithubIcon from "../../../images/icons/GithubIcon.png";
 import GithubIconBlack from "../../../images/icons/GithubIconBlack.png";
 import LinkedinIcon from "../../../images/icons/LinkedinIcon.png";

@@ -31,7 +31,6 @@
 }
 
 .left_picture {
-  height: 350px;
   padding: 10px;
 }
 
@@ -52,19 +51,19 @@
 
 @media screen and (min-width: 1400px) {
   .left_picture {
-    height: 350px;
+    width: 300px;
   }
 }
 
 @media screen and (max-width: 1400px) {
   .left_picture {
-    height: 325px;
+    width: 300px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .left_picture {
-    height: 287px;
+    width: 300px;
   }
 
   .title_text_wrapper {
@@ -80,7 +79,7 @@
 
 @media screen and (max-width: 800px) {
   .left_picture {
-    height: 275px;
+    width: 275px;
   }
 
   .title_text_wrapper {
@@ -88,14 +87,8 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .left_picture {
-    height: 250px;
-  }
-}
-
 @media screen and (max-width: 400px) {
   .left_picture {
-    height: 225px;
+    width: 250px;
   }
 }

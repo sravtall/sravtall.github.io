@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Reveal, { item } from "../../common/Reveal/Reveal.jsx";
 
 import { Info } from "./InfoPanelUtils.jsx";
-import picture from "../../../images/placeholder.jpeg";
+import picture from "../../../images/aboutpage.jpg";
 import styles from "./InfoPanel.module.css";
 
 const InfoPanel = () => {
